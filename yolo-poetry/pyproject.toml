@@ -8,6 +8,8 @@ authors = [
 readme = "README.md"
 requires-python = ">=3.9.0"
 dependencies = [
+    "ultralytics (>=8.3.240,<9.0.0)",
+    "opencv-python-headless (>=4.12.0.88,<5.0.0.0)"
 ]
 
 [tool.poetry]
