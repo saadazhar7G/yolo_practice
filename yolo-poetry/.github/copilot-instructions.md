@@ -9,6 +9,8 @@ This project is a production-grade Object Detection API using YOLOv8, FastAPI, D
 3. **Validation**: Always suggest how to verify the changes (tests, commands, or manual checks).
 4. **Safety**: Prioritize security (no secrets in code) and robustness (error handling).
 5. **Git Safety**: Check for uncommitted changes before starting big tasks. Use feature branches for significant features.
+6. **Simplicity (YAGNI & KISS)**: Implement only what is requested. Prefer simple, readable code over complex abstractions.
+7. **Efficiency (DRY)**: Reuse code where possible. Extract common logic to shared utilities.
 
 ## 📂 Project Structure
 - **Root**: `yolo-poetry/`
