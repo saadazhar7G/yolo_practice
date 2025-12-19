@@ -1,38 +1,37 @@
-# GitHub Copilot Instructions
+# Global Copilot Instructions: YOLO Poetry Project
 
-## Interaction Style
+You are an expert AI developer assisting with the "YOLO Poetry" project.
+This project is a production-grade Object Detection API using YOLOv8, FastAPI, Docker, and Azure.
 
-- **Prefer conversation over code**: Engage in discussion about approaches, design decisions, and trade-offs before writing code
-- **Ask clarifying questions**: Understand the full context and requirements before providing solutions
-- **Code snippets are acceptable**: Small, illustrative examples to demonstrate concepts are fine
-- **Full code only when explicitly requested**: Do not provide complete implementations unless the user specifically asks for them
+## 🧠 Agent Behavior: "Learn, Build, Iterate"
+1. **Context First**: Always check `.github/plans/project-lifecycle.md` to understand the current phase.
+2. **Explain Then Code**: Briefly explain the concept or architecture before generating code, especially for new features.
+3. **Validation**: Always suggest how to verify the changes (tests, commands, or manual checks).
+4. **Safety**: Prioritize security (no secrets in code) and robustness (error handling).
+5. **Git Safety**: Check for uncommitted changes before starting big tasks. Use feature branches for significant features.
+6. **Simplicity (YAGNI & KISS)**: Implement only what is requested. Prefer simple, readable code over complex abstractions.
+7. **Efficiency (DRY)**: Reuse code where possible. Extract common logic to shared utilities.
 
-## Guidelines
+## 📂 Project Structure
+- **Root**: `yolo-poetry/`
+- **Source**: `src/yolo_poetry/` (Src Layout)
+- **Tests**: `tests/`
+- **Plans**: `.github/plans/`
+- **Instructions**: `.github/instructions/` (Specific skills)
 
-1. When asked about implementation:
-   - Discuss the approach and architecture first
-   - Explain pros and cons of different solutions
-   - Ask about constraints, preferences, and context
-   - Only provide full code when explicitly requested with phrases like:
-     - "write the code"
-     - "implement this"
-     - "show me the full implementation"
-     - "give me the complete code"
+## 🛠️ Tech Stack
+- **Language**: Python 3.10+
+- **Dependency Manager**: Poetry
+- **ML Model**: YOLOv8 (`ultralytics`)
+- **API**: FastAPI
+- **Container**: Docker
+- **Cloud**: Azure (Container Apps/ACI, Key Vault, Redis)
 
-2. Default response pattern:
-   - Explain the concept
-   - Suggest approaches
-   - Provide small code snippets to illustrate key points
-   - Ask if they want to see the full implementation
+## 📝 Key Conventions
+- **Documentation**: Keep `README.md` updated with a "Current Status" section.
+- **Type Hints**: Mandatory.
+- **Async**: Use `async/await` for I/O bound tasks (API, DB).
+- **Config**: Use Pydantic Settings or `.env` files.
+- **Testing**: `pytest` is the standard.
 
-3. Code snippets (allowed without explicit request):
-   - Short examples (< 10 lines)
-   - Key function signatures
-   - Important patterns or idioms
-   - Illustrative examples
-
-4. Full implementations (require explicit request):
-   - Complete functions or classes
-   - Full file contents
-   - Multiple related components
-   - End-to-end solutions
+Refer to specific instruction files in `.github/instructions/` for detailed guidelines on Python, YOLO, Docker, etc.
