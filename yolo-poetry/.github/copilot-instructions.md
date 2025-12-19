@@ -28,6 +28,7 @@ This project is a production-grade Object Detection API using YOLOv8, FastAPI, D
 - **Cloud**: Azure (Container Apps/ACI, Key Vault, Redis)
 
 ## 📝 Key Conventions
+- **Documentation**: Keep `README.md` updated with a "Current Status" section.
 - **Type Hints**: Mandatory.
 - **Async**: Use `async/await` for I/O bound tasks (API, DB).
 - **Config**: Use Pydantic Settings or `.env` files.
