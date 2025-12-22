@@ -1,7 +1,7 @@
 # Copilot instructions and plans (keep private)
 .github/instructions/
 .github/plans/
-
+.github/
 # Python
 __pycache__/
 *.py[cod]
